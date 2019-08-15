@@ -3,6 +3,13 @@
     padding:0 30px;
     margin:auto;
 }
+.container2{
+    position: left;
+    max-width: 1200px;
+    padding:auto;
+    margin-left: 0px;
+    margin-right: auto;
+}
 .header{
    
     height: 56px;
@@ -108,18 +115,25 @@ h3{
 
 
 .footer{
-    height: 80px;
-    background-color: #2f3a44;
-    padding-top: 20px;
+    height: 150px;
+    background-color: #121633;
+    padding-top: 0px;
 }
 .footer-left{
+    height: 150px;
+    width: 570px;
     float: left;
+    background-image: url("images1/hutterdesign1.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: contain;
 }  
 .footer-right{
     color: #e8e8e8;
     float: right;
-    padding-top: 20px;
+    padding-top: 100px;
+    padding-right: 50px;
+    margin: auto;
+    
 }
-.footer-left p {
-    margin-bottom: 8px;
-}
+
