@@ -1,3 +1,4 @@
+//*
 .RHCR1{
     padding: 10px;
     margin: 30px;
@@ -21,7 +22,7 @@
     background: url("images1/RHCR3-1.png");
     background-size: cover;
 }
-
+*//
 .tableRHCR1{
 	margin: 10px;
 	padding: 10px;
