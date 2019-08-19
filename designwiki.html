@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BIOMOD2019</title>
+        <meta name="viewpoint" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="designwiki.css">
+        <link rel="stylesheet" href="common.css">
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="reponsive.css">
+    </head> 
+    
+      <body>
+<!-- =======================header====================================================== --> 
+       <div class="header">
+            <div class="container">
+                <div class="header-left">
+                    <a>TEAM SENDAI 2019</a> 
+                </div>
+                <div class="header-right">
+                    <a href="index.html">Home</a>
+                    
+                    <a href="designwiki.html">Design</a>
+                    <a href="experimentwiki.html">Experiment</a>
+                    <a href="simulasionwiki.html">Simulation</a>
+                    <a href="futurewiki.html">Future</a>
+                    <a href="teamwiki.html">Team</a>
+                </div>
+               
+            </div>
+        </div>
+<!-- ========================main====================================================== -->        
+     <div class="main">
+         
+         <div class="container">
+             <p><br><br></p>
+             <h2>Design</h2>
+             <p>  
+             <br>
+                 To realize a gel that exhibits elasticity like a muscle in response to a DNA signal, the polymer constituting the gel is crosslinked with an actuator DNA that exhibits elasticity. Regarding elongation, a special HCR (fig. 1) in which H1 and H2 react while maintaining the crosslinking point has already been reported [1], and the gel can effectively swell by this reaction [2]. However, this reaction allows the gel to swell but not shrink. Therefore, we considered a special HCR called Reverse HRCR (Reverse HCR) that can cause stretching(fig.2) and regression(fig.3) as an actuator for a gel that exhibits elasticity.
+             <br><br>
+             <br><br>
+             </p>
+             <h4>Principle of HCR maintaining the cross-linking point</h4>
+             <img src="imdesign/d1.png"   id="imde1" 
+                width="80%"  border="0" alt="">
+             <p>
+                 fig.1  [1] Principle of HCR maintaining the cross-linking point
+             </p>
+            
+             <p>
+              <br>
+                     DNA A and DNA R are the cross-linking points of the gel. In a special HCR that maintains the cross-linking point, hairpin DNA H1 binds to the sticky ends of A and R, and four-way branch migration occurs (state 1). As a result, R switches from A to H1 (state 2). H2 binds to the newly exposed sticky end of H1, and a four-way branch migration occurs (state 3). This replaces R from H1 to H2(state 4). By this cycle, the DNA complex extends in the R direction while maintaining the crosslinking point.
+             <br>
+             <br>
+                     In the conventional HCR that maintains the cross-linking point, the gel can be effectively expanded by extending the cross-linking, but  to realize a metamorphic robot, expansion and contraction of the gel, that is, expansion and contraction of the actuator is necessary. In RHCR, d, e, f, g, and h domains are required for regression in addition to the domains a, b, c, x, and y required for conventional HCR elongation.
+             <br>
+             <br>
+             <br><br>
+             </p>
+              </div> 
+          </div>
+          
+        <div class="main2"> 
+         <div class="container">
+             <h4>RHCR elongation reaction</h4>
+             
+             <img src="images3/e1.JPG"  id="gazoe"  
+                width="100%"  border="5" alt="">
+             <div class ="tableRHCR0">
+                    <ul class="tableRHCR1">
+                        <li><a href="#panel1" onclick="changeIMG1e()"><<</a></li>
+                        <li><a href="#panel2" onclick="changeIMG2e()"><</a></li>
+                        <li><a href="#panel3" onclick="changeIMG3e()">></a></li>
+                        <li><a href="#panel4" onclick="changeIMG4e()">>></a></li>
+                    </ul>
+             </div>
+             
+             
+<script>
+//画像を配列に格納する
+var im = new Array();
+    im[0] = new Image(); im[0].src="images3/e1.jpg";
+    im[1] = new Image(); im[1].src="images3/e2.jpg";
+    im[2] = new Image(); im[2].src="images3/e3.jpg";
+    im[3] = new Image(); im[3].src="images3/e4.jpg";
+    im[4] = new Image(); im[4].src="images3/e5.jpg";
+    im[5] = new Image(); im[5].src="images3/e6.jpg";
+    im[6] = new Image(); im[6].src="images3/e7.jpg";
+    im[7] = new Image(); im[7].src="images3/e8.jpg";
+    im[8] = new Image(); im[8].src="images3/e9.jpg";
+    im[9] = new Image(); im[9].src="images3/e10.jpg";
+    im[10] = new Image(); im[10].src="images3/e11.jpg";
+    im[11] = new Image(); im[11].src="images3/e12.jpg";
+    im[12] = new Image(); im[12].src="images3/e13.jpg";
+    im[13] = new Image(); im[13].src="images3/e14.jpg";
+    
+//画像番号用のグローバル変数
+    var cnte=0;
+//画像切り替え関数 
+    function changeIMG1e(){
+        cnte=0; 
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+      
+    function changeIMG2e(){
+        if (cnte == 0 )
+        { cnte=0; }
+        else
+        { cnte--; }
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+    
+    function changeIMG3e(){
+        if (cnte == 13 )
+        { cnte=13; }
+        else
+        { cnte++; }
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+
+    function changeIMG4e(){
+        cnte=14; 
+        document.getElementById("gazoe").src=im[cnte].src;
+    }
+</script>
+             <p>
+                 fig,2  RHCR elongation reaction
+             </p>
+                <p>
+             <br>
+             
+                      The elongation reaction of RHCR is basically the same as that of conventional HCR. The reaction diagram is shown in fig.2.<br>
+ Hairpin DNA H1 binds to Sticky ends of A and R, and four-way branch migration occurs (Slide 3). This switches the R bond from A to H1 (slide 4). Next, H2 binds with the f domain of DNA A, the C domain of DNA H1 and the y domain of R as the toehold, and four-way branch migration occurs (Slide 7). This switches the R bond from H1 to H2 (slide 8).   
+ Subsequently, H1 joins domain a and domain x * with domain a * of H2 and the domain x  of R as the toehold, and four-way branch migration occurs again. This (slide 10) switches the R bond from H2 to H1. Four-way branch migration occurs when H2 binds with the exposed c domain of H1 and y * domain of R as toehold (slide 12). This switches the R bond from H1 to H2 (slide 13).<br>
+ By this cycle, the film extends in the R direction while maintaining the crosslinking point.
+
+
+             <br><br>
+             <br>
+             </p>
+              </div>
+        </div>
+         
+         
+      <div class="main">    
+         <div class="container">
+             <h4>RHCR regression reaction</h4>
+             <img src="images2/s1.JPG" id="gazo"   
+                width="100%" border="5" alt="">
+             <div class ="tableRHCR0">
+                    <ul class="tableRHCR1">
+                        <li><a href="#panel1"  onclick="changeIMG1()"><<</a></li>
+                        <li><a href="#panel2" onclick="changeIMG2()"><</a></li>
+                        <li><a href="#panel3" onclick="changeIMG3()">></a></li>
+                        <li><a href="#panel4" onclick="changeIMG4()">>></a></li>
+                    </ul>
+             </div>
+             
+             
+<script>
+//画像を配列に格納する
+var img = new Array();
+    img[0] = new Image(); img[0].src="images2/s1.jpg";
+    img[1] = new Image(); img[1].src="images2/s2.jpg";
+    img[2] = new Image(); img[2].src="images2/s3.jpg";
+    img[3] = new Image(); img[3].src="images2/s4.jpg";
+    img[4] = new Image(); img[4].src="images2/s5.jpg";
+    img[5] = new Image(); img[5].src="images2/s6.jpg";
+    img[6] = new Image(); img[6].src="images2/s7.jpg";
+    img[7] = new Image(); img[7].src="images2/s8.jpg";
+    img[8] = new Image(); img[8].src="images2/s9.jpg";
+    img[9] = new Image(); img[9].src="images2/s10.jpg";
+    img[10] = new Image(); img[10].src="images2/s11.jpg";
+    img[11] = new Image(); img[11].src="images2/s12.jpg";
+    img[12] = new Image(); img[12].src="images2/s13.jpg";
+    img[13] = new Image(); img[13].src="images2/s14.jpg";
+    img[14] = new Image(); img[14].src="images2/s15.jpg";
+    img[15] = new Image(); img[15].src="images2/s16.jpg";
+    img[16] = new Image(); img[16].src="images2/s17.jpg";
+    img[17] = new Image(); img[17].src="images2/s18.jpg";
+    img[18] = new Image(); img[18].src="images2/s19.jpg";
+    img[19] = new Image(); img[19].src="images2/s20.jpg";
+    img[20] = new Image(); img[20].src="images2/s21.jpg";
+    
+   
+//画像番号用のグローバル変数
+var cnt=0;
+//画像切り替え関数 
+    function changeIMG1(){
+        cnt=0; 
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+      
+    function changeIMG2(){
+        if (cnt == 0 )
+        { cnt=0; }
+        else
+        { cnt--; }
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+    
+    function changeIMG3(){
+        if (cnt == 20 )
+        { cnt=20; }
+        else
+        { cnt++; }
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+
+    function changeIMG4(){
+        cnt=20; 
+        document.getElementById("gazo").src=img[cnt].src;
+    }
+</script>
+             <p>
+                 fig.3 RHCR regression reaction
+             </p>
+            
+                <p>
+             <br>
+                       In the regression reaction of RHCR, the oligonucleotide sequence consists of DNA A, H1, H2, and R. DNA R acts as an anchor in this sequence. At the same time as the HCR in the extending direction is being advanced, the H1 eraser hairpin toehold (EH1) hybridizes with the e domain of H1 and the d domain of A (slide 4). Then, the H1 and A unwind to hybridize with EH1 (slide 6). The hybridization continues further by the opening ring of c in EH 1 to bind with c loop in A (slide 7).<br><br>
+ The hybridization doesn’t stop until c, it continues further again until b in EH1 binds with b* in H1 (slide 8). This hybridization is expected to be in equilibrium between slide 7 and slide 8. However, the reaction tends to move to slide 8 as the EH1 releaser binds with the toehold in EH1 to finally release EH1-H1 duplex as shown in Slide 12.<br><br>
+ The dangling end of A hybridizes with H1 because complementary part of g and g* respectively. This hybridization is followed by the rest of the sequence as shown in slide 16, slide 17, slide 18, and slide 19. Finally, H2 is released as the result of this chain hybridization. In the end, the sequence of oligonucleotide on slide 21 has a similar structure as slide 1. The difference is the sequence has been shortened with H1 and H2 being released from the sequence. Then, this reaction repeats until the last H2 in sequence. The chain reaction stops in the last H2 because the f* domain in the H2 is needed to release the other H2 as shown in slide 19.<br><br>
+ If H1 and H2 are present in this state, the elongation reaction starts again on the R side, and RHCR shows a dynamic behavior that repeats expansion and contraction. If H1 and H2 do not exist, RHCR is maintained in a degenerated state. The final stage shown in figure 4 is much shorter than the original state of several H1 and H2 in series, so there is no doubt that RHCR has a regression function.
+                    
+             <br>
+             <br>
+             </p>
+              <img src="imdesign/d4.png"   id="imde4"
+                width="477" height="425" border="0" alt="">
+             <p>fig.4 Final state of regression reaction<br><br><br></p>
+</div>
+          </div>
+          
+           <div class="main2"> 
+              <div class="container">
+
+             
+   
+             <p>[1]  S. Venkataraman, R. M. Dirks, P. W. K. Rothemund, E. Winfree, N. A. Pierce, Nat. Nanotechnol  (2007).<br><br> 
+
+[2] A. Cangialosi, C. Yoon, J. Liu, Q. Huang, J. guo, T. D. Nguyen, D. H. Gracias, R. Schulman, Material science  (2017)<br><br>
+</p>
+              </div>   
+         
+         
+         
+         
+  
+         </div>
+<!-- =============================================================== -->      
+   <div class="footer">
+                 <div class="footer-left">
+        <!--             <a href="#top"><img src="images1/bio-toppage.png" width="60px" height="60px" alt="ページトップへ戻る"/></a>     -->
+                 </div>
+                 <div class="footer-right">
+                     &copy;2019 TEAM SENDAI
+                 </div>
+                 <div class="clear"></div>
+              </div>  
+   <!--      <div class="pagetop_btn"></div>   -->
+        
+         
+     
+    </body>
+</html>
+
+         
+         
