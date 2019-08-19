@@ -80,20 +80,10 @@
 <script>
 //画像を配列に格納する
 var im = new Array();
-    im[0] = new Image(); im[0].src="images3/e1.jpg";
-    im[1] = new Image(); im[1].src="images3/e2.jpg";
-    im[2] = new Image(); im[2].src="images3/e3.jpg";
-    im[3] = new Image(); im[3].src="images3/e4.jpg";
-    im[4] = new Image(); im[4].src="images3/e5.jpg";
-    im[5] = new Image(); im[5].src="images3/e6.jpg";
-    im[6] = new Image(); im[6].src="images3/e7.jpg";
-    im[7] = new Image(); im[7].src="images3/e8.jpg";
-    im[8] = new Image(); im[8].src="images3/e9.jpg";
-    im[9] = new Image(); im[9].src="images3/e10.jpg";
-    im[10] = new Image(); im[10].src="images3/e11.jpg";
-    im[11] = new Image(); im[11].src="images3/e12.jpg";
-    im[12] = new Image(); im[12].src="images3/e13.jpg";
-    im[13] = new Image(); im[13].src="images3/e14.jpg";
+
+    for (var i =0; i<14;i++){
+            im[i] = new Image(); im[i].src="images3/e"+(i+1)+".JPG";
+    }
     
 //画像番号用のグローバル変数
     var cnte=0;
@@ -161,27 +151,9 @@ var im = new Array();
 <script>
 //画像を配列に格納する
 var img = new Array();
-    img[0] = new Image(); img[0].src="images2/s1.jpg";
-    img[1] = new Image(); img[1].src="images2/s2.jpg";
-    img[2] = new Image(); img[2].src="images2/s3.jpg";
-    img[3] = new Image(); img[3].src="images2/s4.jpg";
-    img[4] = new Image(); img[4].src="images2/s5.jpg";
-    img[5] = new Image(); img[5].src="images2/s6.jpg";
-    img[6] = new Image(); img[6].src="images2/s7.jpg";
-    img[7] = new Image(); img[7].src="images2/s8.jpg";
-    img[8] = new Image(); img[8].src="images2/s9.jpg";
-    img[9] = new Image(); img[9].src="images2/s10.jpg";
-    img[10] = new Image(); img[10].src="images2/s11.jpg";
-    img[11] = new Image(); img[11].src="images2/s12.jpg";
-    img[12] = new Image(); img[12].src="images2/s13.jpg";
-    img[13] = new Image(); img[13].src="images2/s14.jpg";
-    img[14] = new Image(); img[14].src="images2/s15.jpg";
-    img[15] = new Image(); img[15].src="images2/s16.jpg";
-    img[16] = new Image(); img[16].src="images2/s17.jpg";
-    img[17] = new Image(); img[17].src="images2/s18.jpg";
-    img[18] = new Image(); img[18].src="images2/s19.jpg";
-    img[19] = new Image(); img[19].src="images2/s20.jpg";
-    img[20] = new Image(); img[20].src="images2/s21.jpg";
+    for(var i=0;i<21;i++){
+    img[i] = new Image(); img[i].src="images2/s"+(i+1)+".JPG";
+    }
     
    
 //画像番号用のグローバル変数
