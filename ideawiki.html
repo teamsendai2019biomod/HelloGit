@@ -50,10 +50,8 @@
  ==============================================================  -->
 
 <!-- ===========================画像のパラパラ===============================================================-->           
-    <img id="gazoe"  src="images3/e1.JPG"
+    <img src="images3/e1.JPG"  id="gazoe"  
                 width="900" height="400" border="0" alt="">
-             
-           
              <div class ="tableRHCR0">
                     <ul class="tableRHCR1">
                         <li><a href="#panel1" onclick="changeIMG1e()"><<</a></li>
@@ -63,7 +61,7 @@
                     </ul>
              </div>
              
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>             
+             
 <script>
 //画像を配列に格納する
 var im = new Array();
@@ -83,14 +81,11 @@ var im = new Array();
     im[13] = new Image(); im[13].src="images3/e14.jpg";
     
 //画像番号用のグローバル変数
-var cnte=0;
+    var cnte=0;
 //画像切り替え関数 
     function changeIMG1e(){
         cnte=0; 
-     
-            document.getElementById("gazoe").src=im[cnte].src;
-        
-        
+        document.getElementById("gazoe").src=im[cnte].src;
     }
       
     function changeIMG2e(){
@@ -98,26 +93,20 @@ var cnte=0;
         { cnte=0; }
         else
         { cnte--; }
-       
-            document.getElementById("gazoe").src=im[cnte].src;
-        
+        document.getElementById("gazoe").src=im[cnte].src;
     }
     
     function changeIMG3e(){
-        if (cnte == 14 )
-        { cnte=14; }
+        if (cnte == 13 )
+        { cnte=13; }
         else
         { cnte++; }
-        
-            document.getElementById("gazoe").src=im[cnte].src;
-        
+        document.getElementById("gazoe").src=im[cnte].src;
     }
 
     function changeIMG4e(){
         cnte=14; 
-        
-            document.getElementById("gazoe").src=im[cnte].src;
-       
+        document.getElementById("gazoe").src=im[cnte].src;
     }
 </script>
 
@@ -135,7 +124,7 @@ var cnte=0;
              <h2>Sub3</h2>
                          
 <!-- ===========================画像のパラパラ===============================================================-->           
-    <img id="gazo"  src="images2/s1.JPG"
+    <img src="images2/s1.JPG" id="gazo"  
                 width="900" height="400" border="0" alt="">
              <div class ="tableRHCR0">
                     <ul class="tableRHCR1">
