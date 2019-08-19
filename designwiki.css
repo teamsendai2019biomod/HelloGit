@@ -39,6 +39,14 @@
 .tableRHCR1 li a{
     size:20px;
 	color: #ffffff;
+    width:40px;
+    height: 40px;
+    display:block;
+    line-height: 40px;
+    border: 1px solid;
+    border-color: white;
+    text-decoration: none;
+    
 }
 
 .tableRHCR1 li a:hover{
