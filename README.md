@@ -1,2 +1,0 @@
-# HelloGit
-初めてのGitHub
