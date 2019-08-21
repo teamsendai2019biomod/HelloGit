@@ -65,7 +65,7 @@
          <div class="container">
              <h4>RHCR elongation reaction</h4>
              
-             <img src="images3/e1.JPG"  id="gazoe"  
+             <img src="im伸張/スライド1.JPG"  id="gazoe"  
                 width="100%"  border="5" alt="">
              <div class ="tableRHCR0">
                     <ul class="tableRHCR1">
@@ -81,8 +81,8 @@
 //画像を配列に格納する
 var im = new Array();
 
-    for (var i =0; i<14;i++){
-            im[i] = new Image(); im[i].src="images3/e"+(i+1)+".JPG";
+    for (var i =0; i<17;i++){
+            im[i] = new Image(); im[i].src="im伸張/スライド"+(i+1)+".JPG";
     }
     
 //画像番号用のグローバル変数
@@ -102,15 +102,15 @@ var im = new Array();
     }
     
     function changeIMG3e(){
-        if (cnte == 13 )
-        { cnte=13; }
+        if (cnte == 16 )
+        { cnte=16; }
         else
         { cnte++; }
         document.getElementById("gazoe").src=im[cnte].src;
     }
 
     function changeIMG4e(){
-        cnte=14; 
+        cnte=16; 
         document.getElementById("gazoe").src=im[cnte].src;
     }
 </script>
@@ -136,7 +136,7 @@ var im = new Array();
       <div class="main">    
          <div class="container">
              <h4>RHCR regression reaction</h4>
-             <img src="images2/s1.JPG" id="gazo"   
+             <img src="im退縮/スライド1.JPG" id="gazo"   
                 width="100%" border="5" alt="">
              <div class ="tableRHCR0">
                     <ul class="tableRHCR1">
@@ -151,8 +151,8 @@ var im = new Array();
 <script>
 //画像を配列に格納する
 var img = new Array();
-    for(var i=0;i<21;i++){
-    img[i] = new Image(); img[i].src="images2/s"+(i+1)+".JPG";
+    for(var i=0;i<24;i++){
+    img[i] = new Image(); img[i].src="im退縮/スライド"+(i+1)+".JPG";
     }
     
    
@@ -173,15 +173,15 @@ var cnt=0;
     }
     
     function changeIMG3(){
-        if (cnt == 20 )
-        { cnt=20; }
+        if (cnt == 23 )
+        { cnt=23; }
         else
         { cnt++; }
         document.getElementById("gazo").src=img[cnt].src;
     }
 
     function changeIMG4(){
-        cnt=20; 
+        cnt=23; 
         document.getElementById("gazo").src=img[cnt].src;
     }
 </script>
