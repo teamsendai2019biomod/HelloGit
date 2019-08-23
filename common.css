@@ -14,6 +14,12 @@
     padding:0px 60px;
     margin: auto;
 }
+.imagegazo{
+    max-width: 1200px;
+    padding:0;
+    margin: auto;
+    text-align: center;
+}
 .header{
     height: 56px;
     width:100%;
@@ -46,7 +52,7 @@ li{
     max-width: calc(1200px/6);
     position: relative;
     padding: 5px;    
-    
+    display: block;
     cursor: pointer;
     font-size: 24px;
 }
@@ -139,7 +145,7 @@ h2{
 
 p{
     font-size: 20px;
-    
+    text-align: justify;
     color:black;
 }
 
@@ -150,6 +156,11 @@ h3{ font-size:30px;
 h4{
     font-size:22px;
     color: black;
+}
+h5{
+    font-size: 20px;
+    margin-bottom: 2px;
+    
 }
 
 .main{
