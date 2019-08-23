@@ -10,6 +10,18 @@
         <link rel="stylesheet" href="reponsive.css">
     </head> 
     
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+ <script>       
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+    
       <body>
 <!-- =======================header====================================================== --> 
        <div class="header">
@@ -37,27 +49,40 @@
              <h2>Design</h2>
              <p>  
              <br>
-                 To realize a gel that exhibits elasticity like a muscle in response to a DNA signal, the polymer constituting the gel is crosslinked with an actuator DNA that exhibits elasticity(fig.1). Regarding elongation, a special HCR (fig. 2) in which H1 and H2 react while maintaining the crosslinking point has already been reported [1], and the gel can effectively swell by this reaction [2]. However, this reaction allows the gel to swell but not shrink. Therefore, we considered a special HCR called Reverse HRCR (Reverse HCR) that can cause stretching(fig.3) and regression(fig.4) as an actuator for a gel that exhibits elasticity.
-             <br><br>
-                 <img src="imdesign/%E3%82%B2%E3%83%AB%E6%8B%A1%E5%A4%A7%E7%B8%AE%E5%B0%8F.jpg"  id="deimg2"  
-                width="100%"  border="0" alt="">
+                To realize gel that exhibits swelling and shrinking like muscles in response to a DNA signal,
+the polymer constituting the gel is crosslinked with an actuator DNA that exhibits elongation
+and regression. Regarding swelling, some effective way to swell hydro gel while maintaining
+the crosslinking points has already been reported [2]. This swelling reaction is indeed
+efficient and effective, but it lacks shrinking reactions that enable reversible and lasting
+movement. Therefore, we considered a novel HCR called RHCR (Reversible HCR) that can
+cause extending (fig.3) and regressing (fig.4) as an actuator for a gel that exhibits swelling
+and shrinking.
+            
                  
                  
              <br><br>
              </p>
              <h4>Principle of HCR maintaining the cross-linking point</h4>
-             <img src="imdesign/imdesignfig1.png"   id="imde1" 
-                width="80%"  border="0" alt="">
+             <img src="imdesign/designgrnri1.png"  id="deimg2"  
+                width="100%"  border="0" alt="">
              <p>
-                 fig.2  [1] Principle of HCR maintaining the cross-linking point
+                 fig. 1 Principle of HCR maintaining the cross-linking point
              </p>
             
              <p>
               <br>
-                     DNA A and DNA R are the cross-linking points of the gel. In a special HCR that maintains the cross-linking point, hairpin DNA H1 binds to the sticky ends of A and R, and four-way branch migration occurs (state 1). As a result, R switches from A to H1 (state 2). H2 binds to the newly exposed sticky end of H1, and a four-way branch migration occurs (state 3). This replaces R from H1 to H2(state 4). By this cycle, the DNA complex extends in the R direction while maintaining the crosslinking point.
+                     DNA A and DNA R are the cross-linking points of the gel. In a special HCR that maintains
+the cross-linking point, hairpin H1 binds to the sticky ends of A and R, and a four-way branch
+migration occurs (state 2~3). As a result, R switches from A to H1 (state 4). H2 binds to the
+newly exposed sticky end of H1, and a four-way branch migration occurs (state 6~7). This
+replaces R from H1 to H2 (state 8). By this cycle, the DNA complex extends in the R
+direction while maintaining the crosslinking point.
              <br>
              <br>
-                    In RHCR, d, e, f, g, and h domains are required for regression in addition to the domains a, b, c, x, and y required for conventional HCR elongation.
+In RHCR, d, e, f, g, and h domains are required for regression in addition to the domains a,
+b, c, x, and y required for conventional HCR elongation.
+             
+                    
              <br>
              <br>
              <br><br>
@@ -119,19 +144,31 @@ var im = new Array();
     }
 </script>
              <p>
-                 fig,3  RHCR elongation reaction
+                 fig.2  RHCR elongation reaction
              </p>
                 <p>
+                    
+            ＜RHCR elongation reaction＞<br>
+1. H1 approaches crosslinking point<br>
+2. H1 binds to sticky ends of A and R<br>
+3. A four-way branch migration occurs<br>
+4. The R hybridization bonds are switched from A to H1<br>
+5. H2 approaches crosslinking point<br>
+6. H2 binds to Sticky Ends of A and R<br>
+7. A four-way branch migration occurs<br>
+8. The R hybridization bonds are switched from H1 to <br>
+9. H1 approaches crosslinking point<br>
+10. H1 domain a and domain x* bind with domain a* of H2 and the domain x of R<br>
+11. A four-way branch migration occurs<br>
+12. The R hybridization bonds are switched from H2 to H1<br>
+13. H2 joins domain c* and domain y with domain c of H1 and the domain y* of R as the
+toehold<br>
+14. A four-way branch migration occurs<br>
+15. The R hybridization bonds are switched from H1 to H2<br><br>
+With this cycle, the film extends in the R direction while maintaining the crosslinking point.<br>
              <br>
+
              
-                      The elongation reaction of RHCR is basically the same as that of conventional HCR. The reaction diagram is shown in fig.2.<br>
- Hairpin DNA H1 binds to Sticky ends of A and R, and four-way branch migration occurs (Slide 3). This switches the R bond from A to H1 (slide 4). Next, H2 binds with the f domain of DNA A, the C domain of DNA H1 and the y domain of R as the toehold, and four-way branch migration occurs (Slide 7). This switches the R bond from H1 to H2 (slide 8).   
- Subsequently, H1 joins domain a and domain x * with domain a * of H2 and the domain x  of R as the toehold, and four-way branch migration occurs again. This (slide 10) switches the R bond from H2 to H1. Four-way branch migration occurs when H2 binds with the exposed c domain of H1 and y * domain of R as toehold (slide 12). This switches the R bond from H1 to H2 (slide 13).<br>
- By this cycle, the film extends in the R direction while maintaining the crosslinking point.
-
-
-             <br><br>
-             <br>
              </p>
               </div>
         </div>
@@ -190,34 +227,52 @@ var cnt=0;
     }
 </script>
              <p>
-                 fig.4 RHCR regression reaction
+                 fig.3 RHCR regression reaction
              </p>
             
                 <p>
-             <br>
-                       In the regression reaction of RHCR, the oligonucleotide sequence consists of DNA A, H1, H2, and R. DNA R acts as an anchor in this sequence. At the same time as the HCR in the extending direction is being advanced, the H1 eraser hairpin toehold (EH1) hybridizes with the e domain of H1 and the d domain of A (slide 4). Then, the H1 and A unwind to hybridize with EH1 (slide 6). The hybridization continues further by the opening ring of c in EH 1 to bind with c loop in A (slide 7).<br><br>
- The hybridization doesn’t stop until c, it continues further again until b in EH1 binds with b* in H1 (slide 8). This hybridization is expected to be in equilibrium between slide 7 and slide 8. However, the reaction tends to move to slide 8 as the EH1 releaser binds with the toehold in EH1 to finally release EH1-H1 duplex as shown in Slide 12.<br><br>
- The dangling end of A hybridizes with H1 because complementary part of g and g* respectively. This hybridization is followed by the rest of the sequence as shown in slide 16, slide 17, slide 18, and slide 19. Finally, H2 is released as the result of this chain hybridization. In the end, the sequence of oligonucleotide on slide 21 has a similar structure as slide 1. The difference is the sequence has been shortened with H1 and H2 being released from the sequence. Then, this reaction repeats until the last H2 in sequence. The chain reaction stops in the last H2 because the f* domain in the H2 is needed to release the other H2 as shown in slide 19.<br><br>
- If H1 and H2 are present in this state, the elongation reaction starts again on the R side, and RHCR shows a dynamic behavior that repeats expansion and contraction. If H1 and H2 do not exist, RHCR is maintained in a degenerated state. The final stage shown in figure 4 is much shorter than the original state of several H1 and H2 in series, so there is no doubt that RHCR has a regression function.
+                       ＜RHCR regressive reaction＞<br>
+1. EH1 approaches crosslinking point<br>
+2. EH1 toehold hybridizes with the e domain of H1 and the d domain of A<br>
+3. A four-way branch migration occurs<br>
+4. The hybridization continues further by the opening ring of c* in EH1<br>
+5. EH1-H1 releaser approaches crosslinking point<br>
+6. EH1-H1 releaser bind with the toehold in EH1<br>
+7. EH1 and A are untied<br>
+8. EH1 and H1 are released from crosslink<br>
+9. The dangling end of A hybridizes with H1<br>
+10. A hybridizes with H1 untied bond of H1 and H2<br>
+11. H2 is released from crosslink<br>
+12. Another EH1 approaches crosslinking point<br>
                     
              <br>
              <br>
              </p>
-              <img src="imdesign/d4.png"   id="imde4"
-                width="477" height="425" border="0" alt="">
-             <p>fig.5 Final state of regression reaction<br><br><br></p>
+            <p>
+                In the end, the sequence of oligonucleotide on slide 21 has the same structure as slide 1.
+The difference is that the sequence has been shortened with H1 and H2 being released from
+the sequence. Then, this reaction repeats until the last H2 in the sequence because the f*
+domain in the H2 is needed to release the other H2 as shown in slide 19.<br><br>
+If H1 and H2 are present in this state, the elongation reaction starts again on the R side,
+and RHCR shows a dynamic behavior that repeat swelling and shrinking. If H1 and H2 do
+not exist, RHCR is maintained in a regressive state. The final stage shown in fig. 5 is much
+shorter than the original state of several H1 and H2 in series, so there is no doubt that
+RHCR has a regressive function.<br><br>
+             </p>
+             
+              <img src="imdesign/imdesignfig4kai.png"   id="imde4"
+                width="60%"  border="0" alt="">
+             <p>fig.4 Final state of regression reaction<br><br><br></p>
 </div>
           </div>
           
            <div class="main2"> 
               <div class="container">
+                  <h4>Sequence Design</h4>
 
              
    
-             <p>[1]  S. Venkataraman, R. M. Dirks, P. W. K. Rothemund, E. Winfree, N. A. Pierce, Nat. Nanotechnol  (2007).<br><br> 
-
-[2] A. Cangialosi, C. Yoon, J. Liu, Q. Huang, J. guo, T. D. Nguyen, D. H. Gracias, R. Schulman, Material science  (2017)<br><br>
-</p>
+             
               </div>   
          
          

@@ -10,6 +10,18 @@
         <link rel="stylesheet" href="reponsive.css">
     </head> 
     
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+ <script>       
+        $(function(){
+    $('.dropdwn li').hover(function(){
+        $("ul:not(:animated)", this).slideDown();
+    }, function(){
+        $("ul.dropdwn_menu",this).slideUp();
+    });
+});
+        </script>
+    
+    
       <body>
 <!-- =======================header====================================================== --> 
        <div class="header">
@@ -28,6 +40,7 @@
                
             </div>
         </div>
+<!-- ========================main====================================================== -->   
 <!-- ========================main====================================================== -->        
         <div class="main-visual">
             <div class="container">
@@ -39,19 +52,22 @@
      <div class="main">
          
          <div class="container">
-             <h2>Abstract</h2>
+             <h2>Background</h2>
              <p>
              <br><br>
-              A recent study has succeeded in making 100 times-swelling hydrogel by DNA-crosslinked acrylamide in which the crosslink extends linearly by incorporating DNA hairpins through Hybridization Chain Reaction (HCR).
-                 <br>
-                 Although the method achieved an extraordinary swelling rate,  the gel cannot shrink.
-                 <br>
-                 It just stops swelling when it runs out of DNA hairpins.
-                 <br>
-                 Here, we propose a novel design of DNA-linked hydrogel that can not only extend but shrink, like a muscle fiber.  In the above swelling gel by HCR,  hairpin DNAs are incorporated at one end of linking complex which allows linear elongation of the crosslink. Based on the same design, we add a novel shrinking mechanism which removes DNA from the other end of the complex. We call it “reverse hybridization chain reaction(RHCR)” .
-                 <br>
-                 In the future, our DNA hydrogel muscle may contribute to the development of highly designable metamorphic robots.
-                 
+              The existing robotics has developed in the direction of making accurate and predictable
+systems consisted of rigid bodies. However, nature frequently performs more than the rigid
+robotics can actually do, and recently there has been the trend of soft robotics which aims to
+imitate the natural world [1].<br>
+Most notably as a material of soft robotics, hydro gel has excellent value in terms of its
+biological compatibility and environmental response. Various possible means such as pH
+control or thermal modulation are known as ways of size regulation of such gel [2]. Among
+those, one of the elongation reactions of linear DNA called Hybridization Chain Reaction
+(HCR) is reported that it can swell hydro gel hundredfold the volume [3]. The HCR used in
+the study is specific in that linear DNA extends without losing the crosslinking points
+between polymers and DNA throughout the whole reaction. The gel can swell by elongating
+the crosslinking sequence of polymers. This dynamic change of hydro gel is expected to be
+applied to metamorphic robots or actuators such as muscles of soft robots.
              <br>
              <br>
              </p>
@@ -59,35 +75,27 @@
     </div>
          <div class="main2"> 
               <div class="container">
-             <h2>Background & Problem</h2>
+             <h2>Problem</h2>
              <p>
              <br><br>
-                                  The existing robotics has developed in the direction of making accurate and predictable
-systems consisted by rigid bodies. However, the world of nature frequently performs more
-than the rigid robotics can actually do, and recently there has been the trend of soft robotics
-inspired by natural world [1].
+It is necessary to regulate reversible swelling and shrinking reactions to apply dynamic size
+change of hydro gel which is occurred by HCR to actuators such as muscles (fig. 1).
+            <br>
+To realize such a reversible regulation, it is needed to proceed the reactions of elongation
+and regression in response to external signals without losing the crosslinking points between
+polymers and DNA. Here, we decided to design a swelling and shrinking system of hydro gel
+which linear DNA can keep its crosslinking points with polymers by adding signal DNA
+from outside. This method takes the advantage of interface between hydro gel and external
+ambient.
                  <br>
-Most notably, gel is of significant value to tissue engineering or DDS in terms of its
-biological compatibility and environmental response such as shrinking and swelling as the
-change of external ambient. Therefore, gel is expected to be applied to metamorphic robots
-that are so stretchable as human muscles [2]. It is already shown that the swelling of such gel
-is effectively feasible by Hybridization Chain Reaction (HCR) which keeps its cross-link
-point between gel and DNA, but the shrinking of gel is yet to be accomplished [2].<br>
-Here, we have developed a special HCR system named RHCR (Reversible HCR) which
-makes it possible to extend or regress when signals added. In the system of RHCR, the
-reaction is polar in that one side extends while the other can regress. This behavior is very
-similar to the dynamics of actin filaments which is widely used as actuators in the biological
-area, and consequently it indicates the capability that RHCR can be a strong actuator in the
-soft robotics area.<br>
                  
                  
-<img src="imindex/Action_and_RHCR.png"  id="indeximg1"  
-                width="80%"  border="0" alt=""><br>
+<img src="imdesign/%E3%82%B2%E3%83%AB%E6%8B%A1%E5%A4%A7%E7%B8%AE%E5%B0%8F.jpg"  id="indeximg1"  
+                width="90%"  border="0" alt=""><br>
+    fig. 1 hydro gel which shrinks and swells reversibly as the change of external ambient
+                 <br><br>
                  
-                 
-Actin filament (top) and RHCR (bottom). Both have polarity in polymerization and
-depolymerization. This property of actin filaments enable cell to migrate and create
-intracellular polarity in living organisms.
+                  
                  
              </p>   
     <!--  ============================================================              

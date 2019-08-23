@@ -21,19 +21,11 @@ li{
 }
 
 .dropdwn>li{
-    padding: 15px;
     width: 1200px;
     margin: 1px;
     background: #fff;
     display: inline;
 }
-
-.dropdwn>li>a{
-    float: center;
-    text-decoration: none;
-    padding:15px
-}
-
 
 
 
@@ -46,9 +38,8 @@ li{
     position: absolute;
     margin-left: -5px;
     margin-top: 5px;
-    padding: 1px;
+    padding: 0;
     background-color: cyan;
-    border: solid 1px black;
 }
 
 .dropdwn_menu li{
@@ -56,16 +47,15 @@ li{
 }
 
 .dropdwn_menu li a{
-    text-decoration: none;
     padding: 10px;
-    margin: -5px 0px -5px 0px;
+    margin: -5px 5px -5px -5px;
     display: block;
-    font-color: navy;
+    color: #fff;
     font-size:20px;
 }
 
 li a:hover{
     background: #b3d7ff;
-    
-    color: red;
+    padding: 10px;
+    color: aqua;
 }
