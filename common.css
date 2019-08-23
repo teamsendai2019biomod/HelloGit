@@ -17,9 +17,30 @@
 .imagegazo{
     max-width: 1200px;
     padding:0;
-    margin: auto;
+    margin: 2.5%;
+    text-align: justify;
+}
+.imagegazo >p{
+    margin-top:0px;
+    margin-bottom: 5px;
+    font-size:18px;
+}
+
+.image70{
+    max-width: 1200px;
+    padding:0;
+    margin: 5% 15% 5% 15%;
+    text-align: justify;
+}
+.image70 >p{
+    margin-top:0px;
+    margin-bottom: 5px;
+    font-size:18px;
+}
+.imagegazo >h4{
     text-align: center;
 }
+
 .header{
     height: 56px;
     width:100%;
@@ -144,21 +165,21 @@ h2{
 }
 
 p{
-    font-size: 20px;
+    font-size: 22px;
     text-align: justify;
     color:black;
 }
 
-h3{ font-size:30px;
+h3{ font-size:32px;
     color: black;
 }
 
 h4{
-    font-size:22px;
+    font-size:28px;
     color: black;
 }
 h5{
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 2px;
     
 }
