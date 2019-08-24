@@ -24,15 +24,14 @@
 
 .tableRHCR1{
 	margin: 5px;
-	padding: 5px;
-    text-align:center;
+	padding: 0px;
 	background-color: #000000;
 }
  
 .tableRHCR1 li{
 	display: inline-block;
 	margin: 5px;
-    vertical-align: middle;
+    vertical-align: inherit;
 	font-weight: bold;
     
 }
