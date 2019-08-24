@@ -76,7 +76,7 @@
             <math>
                 <mi>[</mi><msub><mi>C</mi><mn>4</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>5</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(4)</mi>
             </math>
-            <br>
+             <p><br>・・・・<br></p>
             <math>
                 <mi>[</mi><msub><mi>C</mi><mn>n-1</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>n</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(n-1)</mi>
             </math>
@@ -89,7 +89,7 @@
             <p>Here, H1, H2, C<sub>1</sub>, C<sub>2</sub>, …, C<sub>n+1</sub> are DNA molecules below:</p>
             
             <div class=" image70">
-                <img src="">
+                <img src="imsimuration/1.png" width="100%" border="1" alt="">
                 <p>Fig. 1 The DNA molecules related to the simulation</p>
             </div>
             
@@ -405,8 +405,8 @@
      To start the simulation, the initial concentration of crosslinking DNA and the hairpin structures H1 and H2 are set to 1.1 mmol/L and 20 μmol/L respectively to proceed the experiment in the equal condition with the reproductive one. Plus, according to the figure in the previous study, we carefully chose consistent k and , which is k=3.3×102 L/mol, =10<sup>-4</sup>. We ran the calculation on silab.
 </p>
 
-<div class="">
-    <img src="">
+<div class="imagegazo">
+    <img src="imsimuration/fig2.jpg" width="100%" border="1" alt="">
     <p>Fig. 2 The result of the simulation</p>
 </div>
 <br>
@@ -503,8 +503,8 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
  We presuppose the gel in the figure below so that it is consistent with the referenced previous study
 </p>
 <br>
-<div class="">
-    <img src="">
+<div class="image70">
+    <img src="imsimuration/fig3.jpg" width="100%" border="1" alt="">
     <p>Fig. 3 Presupposed hydrogel size</p>
 </div>
 <br>
@@ -513,10 +513,22 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
  We made a chart of expansion rate with respect to time from this equation.
 </p>
 
-<div class="">
-    <img src="">
+<div class="imagegazo">
+    <img src="imsimuration/fig4.jpg" width="100%" border="1" alt="">
     <p>Fig. 4 The result of simulation about expansion rate</p>
 </div>
+<div class="imagegazo">
+    <img src="imsimuration/fig5.jpg" width="100%" border="1" alt="">
+    <p>Fig. 5 The chart from the referenced study [2]</p>
+</div>
+                <p>Comparing each data in Fig. 4 and Fig. 5, you can see the general accord. Thus, the result we
+have got from this simulation is considered reasonable and proper.</p>
+             </div></div>    
+                
+                
+ <div class="main2">
+         <div class="container">                
+                
 <h2>Simulation about shrinking reactions of hydrogel</h2>
 <h3>Concentration-time simulation</h3>
 <h3>Purpose</h3>
@@ -528,6 +540,7 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
         <mo>k→</mo> 
         <mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(1)</mi>
     </math>
+    <br>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
         <mo>k'→</mo> 
@@ -543,6 +556,7 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
         <mo>k'→</mo> 
         <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(n-3)</mi>
     </math>
+    <br>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
         <mo>k'→</mo> 
@@ -552,9 +566,9 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
 <br>
 <P>Here, k’ is the reaction rate constant, and EH1, D, E are DNA molecules below:</P>
 
-<div class="">
-    <img src="">
-    <p></p>
+<div class="imagegazo">
+    <img src="imsimuration/E_D_EH1.jpg" width="100%" border="1" alt="">
+    <p>Fig.6 The DNA molecules related to the simulation</p>
 </div>
 
 <p>
@@ -734,9 +748,9 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
 
 <p>In these equations, k=3.3*10<sup>2</sup>(L/mol), from the result of simulations about the elongation reaction, and  k’=200 (L/mol). After 40 hours had passed from the beginning of the elongation reaction, EH1 and EH1-H1 releaser were added. Note that, however, the concentration of hairpin structures H1 and H2 are considered to be 0 from that moment on since regressive reactions do not occur as long as H1 and H2 exist. The calculations of these ordinary differential equations are proceeded via scilab.</p>
 
-<div class="">
-    <img src="">
-    <p>Fig. 6 The result of simulation about alteration in concentration</p>
+<div class="imagegazo">
+    <img src="imsimuration/fig6.jpg" width="100%" border="1" alt="">
+    <p>Fig.7 The result of simulation about alteration in concentration</p>
 </div>
 
 <p>In this chart, time is put on the horizontal axis and the concentrations is done on the vertical
@@ -747,10 +761,14 @@ axis. The first 40 hours of this chart shows the alteration in concentrations of
     Next, we ran the simulation about expansion rate by using the same equation as the elongation reactions and newly setting the reaction rate constant for regressive reaction. As the new reaction rate constants we set three values, 200 (L/mol), 100 (L/mol), and 50 (L/mol).
 </p>
 
-<div>
-    <img src="">
-    <p>Fig. 7 The result of simulation about expansion rate</p>
+<div class="imagegazo">
+    <img src="imsimuration/fig7.jpg" width="100%" border="1" alt="">
+    <p>Fig.8 The result of simulation about expansion rate</p>
 </div>
+        <p>From the figure above, it turns out that the expansion rate decreases after adding EH1 and
+EH1-H1 releaser and that means the hydro gel will regress when this condition is applied to
+actual experimental system. When the reaction velocity is 100 (L/mol), the expansion rate of
+hydrogel is reduced to 1 in 20 hours after adding EH1 and EH1-H1 releaser.</p>
 
 <h4>Future prospects for simulation</h4>
 <p>As the outlook for the future, we aims to improve the precision of simulations both about elongation and regression.</p>
