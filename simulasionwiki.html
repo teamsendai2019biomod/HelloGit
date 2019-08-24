@@ -11,8 +11,11 @@
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
     </head> 
     
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
- <script>       
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+  
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     
+ <script> 
         $(function(){
     $('.dropdwn li').hover(function(){
         $("ul:not(:animated)", this).slideDown();
@@ -25,21 +28,59 @@
     
 <body>
 <!-- =======================header====================================================== --> 
-    <div class="header">
-        <div class="container">
-            <div class="header-left">
-                <a>TEAM SENDAI 2019</a> 
-            </div>
-            <div class="header-right">
-                <a href="index.html">Home</a>
-                <a href="designwiki.html">Design</a>
-                <a href="experimentwiki.html">Experiment</a>
-                <a href="simulasionwiki.html">Simulation</a>
-                <a href="futurewiki.html">Future</a>
-                 <a href="teamwiki.html">Team</a>
-            </div>
+           <div class="header">
+            <div class="container">
+                <div class="header-left">
+                    <a>TEAM SENDAI 2019</a> 
+                </div>
+           
+                <ul class="dropdwn">
+    <li><a href="index.html">Home</a>
+            <ul class="dropdwn_menu">
+                <li><a href="index.html#background">Background</a></li>
+                <hr>
+                <li><a href="index.html#problem">Problem</a></li>
+            </ul>
+        </li>
+        <li><a href="designwiki.html">Design</a>
+            <ul class="dropdwn_menu">
+                <li><a href="designwiki.html#principle">HCR Principle</a></li>
+                <hr>
+                <li><a href="designwiki.html#elongation">RHCR extension</a></li>
+                <hr>
+                <li><a href="designwiki.html#regression">RHCR regression</a></li>
+            </ul>
+        </li>
+        <li><a href="experimentwiki.html">Experiment</a>
+            <ul class="dropdwn_menu">
+                <li><a href="experimentwiki.html#main">main</a></li>
+                <hr>
+                <li><a href="supplementary.html">Supplement</a></li>
+                <hr>
+                <li><a href="Material.html">Material & Method</a></li>
+            </ul>
+        </li>
+        <li><a href="simulasionwiki.html">Simulation</a>
+            <ul class="dropdwn_menu">
+                <li><a href="simulasionwiki.html#s1">HCR</a></li>
+                <hr>
+                <li><a href="simulasionwiki.html#s2">Gel swelling</a></li>
+                <hr>
+                <li><a href="simulasionwiki.html#s3">RHCR </a></li>
+                <hr>
+                <li><a href="simulasionwiki.html#s4">Gel shrinking</a></li>
+            </ul>
+        </li>
+        <li><a href="futurewiki.html">Future</a>
+            
+        </li>
+        <li><a href="teamwiki.html">Team</a>
+        </li>
+        <li><a href="elsi.html">ELSI</a>
+        </li>
+    </ul>
                
-            </div>
+     </div>     
         </div>
 <!-- ========================main====================================================== -->        
      <div class="main">
@@ -88,8 +129,8 @@
             
             <p>Here, H1, H2, C<sub>1</sub>, C<sub>2</sub>, …, C<sub>n+1</sub> are DNA molecules below:</p>
             
-            <div class=" image70">
-                <img src="imsimuration/1.png" width="100%" border="1" alt="">
+            <div class=" imagegazo">
+                <img src="imsimuration/1.png" width="100%" border="" alt="">
                 <p>Fig. 1 The DNA molecules related to the simulation</p>
             </div>
             
@@ -504,8 +545,8 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
 </p>
 <br>
 <div class="image70">
-    <img src="imsimuration/fig3.jpg" width="100%" border="1" alt="">
-    <p>Fig. 3 Presupposed hydrogel size</p>
+    <img src="imsimuration/fig3.jpg" width="100%" border="" alt="">
+    <p><br>Fig. 3 Presupposed hydrogel size</p>
 </div>
 <br>
 <p>
@@ -517,7 +558,7 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
     <img src="imsimuration/fig4.jpg" width="100%" border="1" alt="">
     <p>Fig. 4 The result of simulation about expansion rate</p>
 </div>
-<div class="imagegazo">
+<div class="image70">
     <img src="imsimuration/fig5.jpg" width="100%" border="1" alt="">
     <p>Fig. 5 The chart from the referenced study [2]</p>
 </div>
@@ -566,8 +607,8 @@ have got from this simulation is considered reasonable and proper.</p>
 <br>
 <P>Here, k’ is the reaction rate constant, and EH1, D, E are DNA molecules below:</P>
 
-<div class="imagegazo">
-    <img src="imsimuration/E_D_EH1.jpg" width="100%" border="1" alt="">
+<div class="image70">
+    <img src="imsimuration/E_D_EH1.jpg" width="100%" border="" alt="">
     <p>Fig.6 The DNA molecules related to the simulation</p>
 </div>
 
@@ -774,7 +815,7 @@ hydrogel is reduced to 1 in 20 hours after adding EH1 and EH1-H1 releaser.</p>
 <p>As the outlook for the future, we aims to improve the precision of simulations both about elongation and regression.</p>
         
         
-        <a href="code.zip" class="btn-square" download="code.zip">ダウンロード</a>
+        <a href="code.zip" class="btn-square" download="code.zip">Souce code(.zip)</a>
 
               </div>   
          </div>
