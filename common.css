@@ -72,7 +72,7 @@
 
 <!-- ========================================================== -->
 .dropdwn{
-    max-width: 1200px;
+    width: 80%;
     height: 58px;
     display: flex;
 }
@@ -84,21 +84,11 @@ ul{
     padding: 0;
     color: #fff;
 }
-li{
-     
-    width: 14%;
-    position: relative;
-    padding: 5px;    
-    display: block;
-    cursor: pointer;
-    font-size: 24px;
-    
-    
-}
+
 
 .dropdwn>li{
     padding: 15px;
-    width: 14%;
+    width: 20%;
     margin: 1px;
     background: #fff;
     display: inline;
