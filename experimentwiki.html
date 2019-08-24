@@ -10,8 +10,11 @@
         <link rel="stylesheet" href="reponsive.css">
     </head> 
     
-       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
- <script>       
+       <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+  
+     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
+     
+ <script> 
         $(function(){
     $('.dropdwn li').hover(function(){
         $("ul:not(:animated)", this).slideDown();
@@ -24,21 +27,59 @@
     
       <body>
 <!-- =======================header====================================================== --> 
-       <div class="header">
+           <div class="header">
             <div class="container">
                 <div class="header-left">
                     <a>TEAM SENDAI 2019</a> 
                 </div>
-                <div class="header-right">
-                    <a href="index.html">Home</a>
-                    <a href="designwiki.html">Design</a>
-                    <a href="experimentwiki.html">Experiment</a>
-                    <a href="simulasionwiki.html">Simulation</a>
-                    <a href="futurewiki.html">Future</a>
-                    <a href="teamwiki.html">Team</a>
-                </div>
+           
+                <ul class="dropdwn">
+    <li><a href="index.html">Home</a>
+            <ul class="dropdwn_menu">
+                <li><a href="index.html#background">Background</a></li>
+                <hr>
+                <li><a href="index.html#problem">Problem</a></li>
+            </ul>
+        </li>
+        <li><a href="designwiki.html">Design</a>
+            <ul class="dropdwn_menu">
+                <li><a href="designwiki.html#principle">HCR Principle</a></li>
+                <hr>
+                <li><a href="designwiki.html#elongation">RHCR elongation</a></li>
+                <hr>
+                <li><a href="designwiki.html#regression">RHCR regression</a></li>
+            </ul>
+        </li>
+        <li><a href="experimentwiki.html">Experiment</a>
+            <ul class="dropdwn_menu">
+                <li><a href="experimentwiki.html#main">main</a></li>
+                <hr>
+                <li><a href="supplementary.html">Supplement</a></li>
+                <hr>
+                <li><a href="material.html">Material & Method</a></li>
+            </ul>
+        </li>
+        <li><a href="simulasionwiki.html">Simulation</a>
+            <ul class="dropdwn_menu">
+                <li><a href="simulasionwiki.html#s1">HCR</a></li>
+                <hr>
+                <li><a href="simulasionwiki.html#s2">Gel swelling</a></li>
+                <hr>
+                <li><a href="simulasionwiki.html#s3">RHCR </a></li>
+                <hr>
+                <li><a href="simulasionwiki.html#s4">Gel shrinking</a></li>
+            </ul>
+        </li>
+        <li><a href="futurewiki.html">Future</a>
+            
+        </li>
+        <li><a href="teamwiki.html">Team</a>
+        </li>
+        <li><a href="elsi.html">ELSI</a>
+        </li>
+    </ul>
                
-            </div>
+     </div>     
         </div>
 <!-- ========================main====================================================== -->        
      <div class="main">
