@@ -84,6 +84,7 @@
         </div>
 <!-- ========================main====================================================== -->        
      <div class="main">
+         <a name="s1"></a>
          <div class="container">
              <p><br><br></p>
              <h2>Simulation</h2>
@@ -451,7 +452,7 @@
     <p>Fig. 2 The result of the simulation</p>
 </div>
 <br>
-<p>
+<p><a name="s2"></a>
     In this chart, time is put on the horizontal axis and the concentrations is done on the vertical axis. This figure shows the alteration in concentrations of DNAs bound by hairpin structures H1 and H2 produced after following 1, 5, 10, 15, 20 cycles respectively with respect to time. 
 </p>
 <br>
@@ -568,6 +569,7 @@ have got from this simulation is considered reasonable and proper.</p>
                 
                 
  <div class="main2">
+     <a name="s3"></a>
          <div class="container">                
                 
 <h2>Simulation about shrinking reactions of hydrogel</h2>
@@ -682,6 +684,33 @@ have got from this simulation is considered reasonable and proper.</p>
         <mo>-</mo>
         <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>200</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi><mi>)</mi>
 </math>
+    <br>         
+<math>
+    <mfrac>
+        <mrow>
+            <mi>d</mi><mi>[</mi><mi>EH1</mi></mi><mi>]</mi>
+        </mrow>
+    <mn>dt</mn>
+    </mfrac>
+        <mi>=</mi>
+    <mfrac>
+        <mrow>
+            <mi>d</mi><mi>[</mi><mi>D</mi></mi><mi>]</mi>
+        </mrow>
+    <mn>dt</mn>
+    </mfrac>
+    <mo>=</mo>
+        <mi>α</mi><mi>(</mi><mo>-k'</mo><mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k'</mi><mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>・・・・</mi>
+        <mo>-</mo>
+        <mi>k'</mi><mi>[</mi><msub><mi>C</mi><mi>2n+1</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k'</mi><mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi><mi>)</mi>
+</math>             
+             
 <br>
 <br>
 <br>
@@ -796,9 +825,10 @@ have got from this simulation is considered reasonable and proper.</p>
 
 <p>In this chart, time is put on the horizontal axis and the concentrations is done on the vertical
 axis. The first 40 hours of this chart shows the alteration in concentrations of DNAs bound by 1, 5, 10, 15, 20 pair(s) of hairpin structures (note that one pair means H1 and H2) respectively with respect to time. After adding EH1 and EH1-H1 releaser (note that they are added when 40 hours had just passed), the peak of longer DNAs first started to decrease and then other peaks follows one after another in descending order. For example, after a lapse of 49 hours the main product of this reaction system is crosslinking DNAs with 20 hairpin structures in total, but the crosslinking DNAs with 2 hairpin structures took the place of the main structure after a lapse of 62 hours. From this simulation, it becomes apparent that DNA regresses as time passes.
+    
 </p>
 
-<p>
+<p><a name="s4"></a><br><br>
     Next, we ran the simulation about expansion rate by using the same equation as the elongation reactions and newly setting the reaction rate constant for regressive reaction. As the new reaction rate constants we set three values, 200 (L/mol), 100 (L/mol), and 50 (L/mol).
 </p>
 
@@ -816,7 +846,7 @@ hydrogel is reduced to 1 in 20 hours after adding EH1 and EH1-H1 releaser.</p>
         
         
         <a href="code.zip" class="btn-square" download="code.zip">Souce code(.zip)</a>
-
+<br><br><br>
               </div>   
          </div>
 <!-- ==============================================================-->

@@ -209,7 +209,7 @@ h5{
 }
 
 .main{
-    padding:20px 10px 20px;
+    padding:20px 0px 0px 0px;
     margin-top: auto;
     margin-bottom: auto;
     margin-left: auto;
@@ -217,7 +217,7 @@ h5{
 }
 .main2{
     background-color: lavenderblush;
-    padding:20px 10px 20px;
+    padding:20px 0px 0px 0px;
     border:red 0px solid;
     margin: auto;
 }
