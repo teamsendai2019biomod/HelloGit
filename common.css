@@ -94,7 +94,7 @@ ul{
     margin: 1px;
     background: #fff;
     display: inline;
-    border: solid 1px aqua;
+    border: solid 0px aqua;
 }
 
 .dropdwn>li>a{
@@ -112,7 +112,7 @@ ul{
     margin-top: 10px;
     padding: 1px;
     background-color: ghostwhite;
-    border: solid 1px red;
+    border: solid 0px red;
 }
 
 .dropdwn_menu>li{
@@ -128,8 +128,6 @@ ul{
 }
 
 li a:hover{
-    background: #b3d7ff;
-    
     color: red;
 }
 

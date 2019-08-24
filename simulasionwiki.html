@@ -10,13 +10,9 @@
         <link rel="stylesheet" href="reponsive.css">
         <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_SVG"></script>
     </head> 
- 
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
-  
-     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> 
-     
- <script> 
+       <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>        
+ <script>       
         $(function(){
     $('.dropdwn li').hover(function(){
         $("ul:not(:animated)", this).slideDown();
@@ -25,70 +21,32 @@
     });
 });
         </script>
-       
+    
     
 <body>
 <!-- =======================header====================================================== --> 
     <div class="header">
-            <div class="container">
-                <div class="header-left">
-                    <a>TEAM SENDAI 2019</a> 
-                </div>
-           
-                <ul class="dropdwn">
-    <li><a href="index.html">Home</a>
-            <ul class="dropdwn_menu">
-                <li><a href="index.html#background">Background</a></li>
-                <hr>
-                <li><a href="index.html#problem">Problem</a></li>
-            </ul>
-        </li>
-        <li><a href="designwiki.html">Design</a>
-            <ul class="dropdwn_menu">
-                <li><a href="designwiki.html#principle">HCR Principle</a></li>
-                <hr>
-                <li><a href="designwiki.html#elongation">RHCR extension</a></li>
-                <hr>
-                <li><a href="designwiki.html#regression">RHCR regression</a></li>
-            </ul>
-        </li>
-        <li><a href="experimentwiki.html">Experiment</a>
-            <ul class="dropdwn_menu">
-                <li><a href="experimentwiki.html#main">main</a></li>
-                <hr>
-                <li><a href="supplementary.html">Supplement</a></li>
-                <hr>
-                <li><a href="Material.html">Material & Method</a></li>
-            </ul>
-        </li>
-        <li><a href="simulasionwiki.html">Simulation</a>
-            <ul class="dropdwn_menu">
-                <li><a href="simulasionwiki.html#s1">HCR</a></li>
-                <hr>
-                <li><a href="simulasionwiki.html#s2">Gel swelling</a></li>
-                <hr>
-                <li><a href="simulasionwiki.html#s3">RHCR </a></li>
-                <hr>
-                <li><a href="simulasionwiki.html#s4">Gel shrinking</a></li>
-            </ul>
-        </li>
-        <li><a href="futurewiki.html">Future</a>
-            
-        </li>
-        <li><a href="teamwiki.html">Team</a>
-        </li>
-        <li><a href="elsi.html">ELSI</a>
-        </li>
-    </ul>
+        <div class="container">
+            <div class="header-left">
+                <a>TEAM SENDAI 2019</a> 
+            </div>
+            <div class="header-right">
+                <a href="index.html">Home</a>
+                <a href="designwiki.html">Design</a>
+                <a href="experimentwiki.html">Experiment</a>
+                <a href="simulasionwiki.html">Simulation</a>
+                <a href="futurewiki.html">Future</a>
+                 <a href="teamwiki.html">Team</a>
+            </div>
                
-     </div>     
+            </div>
         </div>
 <!-- ========================main====================================================== -->        
      <div class="main">
-         
          <div class="container">
              <p><br><br></p>
              <h2>Simulation</h2>
+             <a href="code.zip" download="code.zip">ダウンロード</a>
              <p>Simulation about swelling reactions of hydrogel</p>
              <h3>Purpose</h3>
              <p>
@@ -102,13 +60,31 @@
                  Simulation about serial concentration change
                  First, the chemical reaction formulae that are used in the simulation is below:
              </p>
-            <p>[ C<sub>1</sub>]+[H1] k→ [ C<sub>2</sub>] (1)</p>
-            <p>[ C<sub>2</sub>]+[H2] k→ [ C<sub>3</sub>] (2)</p>
-            <p>[ C<sub>3</sub>]+[H1] k→ [ C<sub>4</sub>] (3)</p>
-            <p>[ C<sub>4</sub>]+[H2] k→ [ C<sub>5</sub>] (4)</p>
-            <p>[ C<sub>n-1</sub>]+[H2] k→ [ C<sub>n</sub>] (n-1)</p>
-                    <!-- [ Cn]+[H2]→[ Cn+₁] -->
-            <p>[ C<sub>n</sub>]+[H2] k→ [ C<sub>n+1</sub>] (n)</p>
+             
+            <math>
+                <mi>[</mi><msub><mi>C</mi><mn>1</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H1</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>2</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(1)</mi>
+            </math>
+                <br>
+             <math>
+                <mi>[</mi><msub><mi>C</mi><mn>2</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>3</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(2)</mi>
+             </math>
+                <br>
+            <math>
+                <mi>[</mi><msub><mi>C</mi><mn>3</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H1</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>4</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(3)</mi>
+            </math>
+            <br>
+            <math>
+                <mi>[</mi><msub><mi>C</mi><mn>4</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>5</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(4)</mi>
+            </math>
+            <br>
+            <math>
+                <mi>[</mi><msub><mi>C</mi><mn>n-1</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>n</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(n-1)</mi>
+            </math>
+            <br>
+            <math>
+                <mi>[</mi><msub><mi>C</mi><mn>n</mn></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mo>k→</mo><mi>[</mi><msub><mi>C</mi><mn>n+1</mn></msub><mi>]</mi><mi>&nbsp;&nbsp;(n)</mi>
+            </math>
+          
             
             <p>Here, H1, H2, C<sub>1</sub>, C<sub>2</sub>, …, C<sub>n+1</sub> are DNA molecules below:</p>
             
@@ -549,12 +525,12 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
 <div>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>2n+1</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
-        <mo>K→</mo> 
+        <mo>k→</mo> 
         <mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(1)</mi>
     </math>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
-        <mo>K`→</mo> 
+        <mo>k'→</mo> 
         <mi>[</mi><msub><mi>C</mi><mi>2n-1</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(2)</mi>
     </math>
     <br>
@@ -564,12 +540,12 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
     <br>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>5</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
-        <mo>K`→</mo> 
+        <mo>k'→</mo> 
         <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(n-3)</mi>
     </math>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
-        <mo>→</mo> 
+        <mo>k'→</mo> 
         <mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(n-2)</mi>
     </math>
 </div>
@@ -588,88 +564,197 @@ is the sum of concentration of each crosslinking DNA produced throughout the rea
 <div>
     <math>
         <mi>[</mi><msub><mi>C</mi><mi>6</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
-        <mo>K`→</mo> 
-        <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>(n-3)</mi>
+        <mo>k'→</mo> 
+        <mi>[</mi><msub><mi>C</mi><mi>5</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>&nbsp;&nbsp;1cycle</mi>
+    </math>
+    <br>
+    <br>
+    <math>
+        <mi>[</mi><msub><mi>C</mi><mi>5</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
+        <mo>k'→</mo> 
+        <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>H2</mi><mi>]</mi><mi>&nbsp;&nbsp;2cycle</mi>
+    </math>
+    <br>
+    <br>
+    <math>
+        <mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>EH1</mi><mi>]</mi><mo>+</mo><mi>[</mi><mi>D</mi><mi>]</mi>
+        <mo>k'→</mo> 
+        <mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mo>+</mo><mi>[</mi><mi>E</mi><mi>]</mi><mi>&nbsp;&nbsp;3cycle</mi>
     </math>
 </div>
+<p>We postulated that a maximum of 100 cycles can occur, and proceeded the simulation by solving multiple differential equation below:</p>
+<p>The rate equations</p>
+<br>
+<br>
+<math>
+    <mfrac>
+       <mrow>
+            <mi>d</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        </mrow>
+        <mn>dt</mn>
+    </mfrac>
+        <mi>=</mi>
+        <mi>α</mi><mi>(</mi><mo>-</mo><mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>1</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>・・・</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2i-1</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+         <mo>-</mo>
+        <mi>・・・</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>199</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+</math>
+<br>
+<math>
+    <mfrac>
+       <mrow>
+            <mi>d</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+        </mrow>
+        <mn>dt</mn>
+    </mfrac>
+        <mi>=</mi>
+        <mi>α</mi><mi>(</mi><mo>-</mo><mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>・・・</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2i</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+         <mo>-</mo>
+        <mi>・・・</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>200</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+</math>
+<br>
+<br>
+<br>
+    <math>
+        <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>201</mi></msub><mi>]</mi>
+        <mo>=</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>DNA</mi><mi>2n-1</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+                <mo>-</mo>
+                <mi>k'</mi><mi>[</mi><msub><mi>DNA</mi><mi>2n</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+    </math>
+    <br>
+     <math>
+        <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>200</mi></msub><mi>]</mi>
+        <mo>=</mo>
+        <mo>-</mo><mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>199</mi></msub><mi>]</mi>
+                <mo>-</mo>
+                <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>200</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+    </math>
+    <p>・・・・</p>
+    <math>
+        <mfrac>
+           <mrow>
+                <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>2n+1</mi><mi>]</mi>
+            </mrow>
+            <mn>dt</mn>
+        </mfrac>
+        <mi>=</mi>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2n+1</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-k'</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2n+1</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+    </math>
+    <br>
+    <math>
+    <mfrac>
+           <mrow>
+                <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>2n</mi><mi>]</mi>
+            </mrow>
+            <mn>dt</mn>
+        </mfrac>
+        <mi>=</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2n-1</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2n</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+    </math>
+    <p>・・・・</p>
+    <math>
+        <mfrac>
+           <mrow>
+                <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>4</mi><mi>]</mi>
+            </mrow>
+            <mn>dt</mn>
+        </mfrac>
+        <mi>=</mi>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>4</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+    </math>
+    <br>
+    <math>
+        <mfrac>
+           <mrow>
+                <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>3</mi><mi>]</mi>
+            </mrow>
+            <mn>dt</mn>
+        </mfrac>
+        <mi>=</mi>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k'</mi><mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+        <mo>+</mo>
+        <mi>k'</mi><mi>[</mi><msub><mi>C</mi><mi>5</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+    </math>
+    <br>
+    <math>
+        <mfrac>
+           <mrow>
+                <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>2</mi><mi>]</mi>
+            </mrow>
+            <mn>dt</mn>
+        </mfrac>
+        <mi>=</mi>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>1</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+        <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>2</mi></msub><mi>]</mi><mi>[</mi><mi>H2</mi><mi>]</mi>
+        <mo>+</mo>
+        <mi>k'</mi><mi>[</mi><msub><mi>C</mi><mi>3</mi></msub><mi>]</mi><mi>[</mi><mi>EH1</mi><mi>]</mi><mi>[</mi><mi>rel</mi><mi>]</mi>
+    </math>
+    <br>
+    <math>
+        <mfrac>
+           <mrow>
+                <mi>d</mi><mi>[</mi><msub><mi>C</mi><mi>1</mi><mi>]</mi>
+            </mrow>
+            <mn>dt</mn>
+        </mfrac>
+        <mi>=</mi>
+         <mo>-</mo>
+        <mi>k</mi><mi>[</mi><msub><mi>C</mi><mi>1</mi></msub><mi>]</mi><mi>[</mi><mi>H1</mi><mi>]</mi>
+    </math>
 
+<p>In these equations, k=3.3*10<sup>2</sup>(L/mol), from the result of simulations about the elongation reaction, and  k’=200 (L/mol). After 40 hours had passed from the beginning of the elongation reaction, EH1 and EH1-H1 releaser were added. Note that, however, the concentration of hairpin structures H1 and H2 are considered to be 0 from that moment on since regressive reactions do not occur as long as H1 and H2 exist. The calculations of these ordinary differential equations are proceeded via scilab.</p>
 
-             <p>
-             1<br>
-             2<br>
-             3<br>
-             4<br>
-             5<br>
-             6<br>
-             7<br>
-             8<br>
-             A<br>B<br>C<br>D<br>E<br>F<br>G<br>E<br>F<br>G<br>H<br>I<br>J<br>K<br>L<br>M<br>
-                 M<br>
-                 N<br>
-                 O<br>
-             </p>
-             <h2>Sub3</h2>
-                <p>
-             1<br>
-             2<br>
-             3<br>
-             4<br>
-             5<br>
-             6<br>
-             7<br>
-             8<br>
-             A<br>B<br>C<br>D<br>E<br>F<br>G<br>E<br>F<br>G<br>H<br>I<br>J<br>K<br>L<br>M<br>
-                 M<br>
-                 N<br>
-                 O<br>
-             </p>
-              </div>   
-         <div class="container">
-             <h2>Sub1</h2>
-             <p>
-             1 <br>
-             2 <br>
-             3 <br>
-             4<br>
-             5<br>
-             6<br>
-             7<br>
-             8<br>
-             A<br>B<br>C<br>D<br>E<br>F<br>G<br>E<br>F<br>G<br>H<br>I<br>J<br>K<br>L<br>M<br>
-                 M<br>
-                 N<br>
-                 O<br>
-             </p>
-             <h2>Sub2</h2>
-             <p>
-             1<br>
-             2<br>
-             3<br>
-             4<br>
-             5<br>
-             6<br>
-             7<br>
-             8<br>
-             A<br>B<br>C<br>D<br>E<br>F<br>G<br>E<br>F<br>G<br>H<br>I<br>J<br>K<br>L<br>M<br>
-                 M<br>
-                 N<br>
-                 O<br>
-             </p>
-             <h2>Sub3</h2>
-                <p>
-             1<br>
-             2<br>
-             3<br>
-             4<br>
-             5<br>
-             6<br>
-             7<br>
-             8<br>
-             A<br>B<br>C<br>D<br>E<br>F<br>G<br>E<br>F<br>G<br>H<br>I<br>J<br>K<br>L<br>M<br>
-                 M<br>
-                 N<br>
-                 O<br>
-             </p>
+<div class="">
+    <img src="">
+    <p>Fig. 6 The result of simulation about alteration in concentration</p>
+</div>
+
+<p>In this chart, time is put on the horizontal axis and the concentrations is done on the vertical
+axis. The first 40 hours of this chart shows the alteration in concentrations of DNAs bound by 1, 5, 10, 15, 20 pair(s) of hairpin structures (note that one pair means H1 and H2) respectively with respect to time. After adding EH1 and EH1-H1 releaser (note that they are added when 40 hours had just passed), the peak of longer DNAs first started to decrease and then other peaks follows one after another in descending order. For example, after a lapse of 49 hours the main product of this reaction system is crosslinking DNAs with 20 hairpin structures in total, but the crosslinking DNAs with 2 hairpin structures took the place of the main structure after a lapse of 62 hours. From this simulation, it becomes apparent that DNA regresses as time passes.
+</p>
+
+<p>
+    Next, we ran the simulation about expansion rate by using the same equation as the elongation reactions and newly setting the reaction rate constant for regressive reaction. As the new reaction rate constants we set three values, 200 (L/mol), 100 (L/mol), and 50 (L/mol).
+</p>
+
+<div>
+    <img src="">
+    <p>Fig. 7 The result of simulation about expansion rate</p>
+</div>
+
+<h4>Future prospects for simulation</h4>
+<p>As the outlook for the future, we aims to improve the precision of simulations both about elongation and regression.</p>
+
               </div>   
          </div>
 <!-- ==============================================================-->
